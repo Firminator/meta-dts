@@ -3,16 +3,16 @@
 source /usr/sbin/dts-environment.sh
 
 ### Color functions
+print_green() {
+  echo -e "$GREEN""$1""$COLOR_OFF"
+}
+
 print_warning() {
   echo -e "$YELLOW""$1""$COLOR_OFF"
 }
 
 print_error() {
   echo -e "$RED""$1""$COLOR_OFF"
-}
-
-print_green() {
-  echo -e "$GREEN""$1""$COLOR_OFF"
 }
 
 check_if_dasharo() {
